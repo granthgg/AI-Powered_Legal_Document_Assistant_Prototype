@@ -24,7 +24,7 @@ const SidebarChat = ({ chatbox, handleSidebarChat }) => {
       <div className="bg-black w-4/5 md:w-2/5 rounded overflow-auto transition-all ">
         <div>
           <p className="text-center mt-3">DOCUMENT SUGGESTION</p>
-          <ul className="bg-zinc-400 border-zinc-50 border-2  p-1 m-3 rounded-lg leading-3 text-xs ">
+          <ul className="text-left bg-zinc-400 border-zinc-50 border-2  p-1 m-3 rounded-lg leading-3 text-xs ">
             <li>Activity Waiver Form</li>
             <li>Amending Agreement</li>
             <li>Bill for Sale</li>
