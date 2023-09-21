@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #eaecef;
+}
+
+header{
+    padding:30px;
+    background-color: #1a1a1a;
+    height: 40px;
+
+}
+header svg{
+    transition:  all 0.15s;
+}
+
+.sidebar{
+    width: 20%;
+    background-color: rgb(21, 21, 21);
+    position: fixed;
+    height: 100vh;
+    padding: 0 30px;
+    left: -100%;
+    transition:  all 0.2s;
+    top:0;
+    display:flex;
+    align-items: center ;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.sidebar.active{
+    left: 0;
+}
+
+.logo{
+    width: 50px;
+}
+
+ul li{
+    list-style: none;
+    transition: all 0.5s;
+    padding: 5px 10px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+ul li svg{
+    color: white;
+}
+
+ul li Link svg span {
+    
+}
+
+ul  li:hover {
+    background-color: rgb(100 116 139);
+    border-radius: 20px;
+    translate: 1rem 0;
+}
+
+ul li Link{
+    color:#eaecef;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+header svg{
+    font-size: 40px;
+}
+
+.card{
+    width: 20%;
+    transition: all 1s;
+}
+
+.sidebarchat{
+    transition: all 1s;
+}
+
+.about{
+    height: 90vh;
+}
+
+.sidebarchat{
+    background-color:rgba(0,0,0,0.2);
+    transition: all 1s;
+}
+
+.notActive{
+    left: -200%;
+}
