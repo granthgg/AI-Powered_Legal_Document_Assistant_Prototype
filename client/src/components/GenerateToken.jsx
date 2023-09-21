@@ -12,7 +12,7 @@ const GenerateToken = ({ open, handleSideBar }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (message.trim() !== "") {
-      const ans = await fetch("http://localhost:4000/ask", {
+      const ans = await fetch("https://express-app-nj2x.onrender.com/ask", {
         method: "POST",
         body: JSON.stringify({
           prompt: message,
