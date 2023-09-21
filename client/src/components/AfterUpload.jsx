@@ -4,7 +4,7 @@ const AfterUpload = () => {
   return (
     <div className=" flex m-3 gap-5 flex-col md:flex-row justify-center items-center">
       <div className="w-full h-full">
-        <p className="text-black text-center p-2">UPLOADED DOCUMNET</p>
+        <p className="text-black text-center p-2">UPLOADED DOCUMENT</p>
         <div className=" bg-black  rounded-lg p-2 overflow-auto text-justify">
           <p>
           GENERAL AFFIDAVIT
