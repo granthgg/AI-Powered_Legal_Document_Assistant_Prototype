@@ -7,6 +7,8 @@ import OpenAI from "openai";
 config();
 
 const app = express();
+export default app;
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
