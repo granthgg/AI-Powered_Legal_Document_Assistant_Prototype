@@ -4,7 +4,7 @@ import Cards from "./Cards";
 const Main = ({ handleSidebarChat }) => {
   const data = [
     {
-      title: "GENERATE DOCUMNET",
+      title: "GENERATE DOCUMENT",
       description: [
         "Loan Agreement",
         "Partnership Agreement",
@@ -14,7 +14,7 @@ const Main = ({ handleSidebarChat }) => {
       route: "Generate-Token",
     },
     {
-      title: "CUSTOMIZE DOCUMNET",
+      title: "CUSTOMIZE DOCUMENT",
       description: [
         "Recent document",
         "Any Other Documents",
@@ -30,7 +30,7 @@ const Main = ({ handleSidebarChat }) => {
         "Criminal Defense consulting",
         "Tax Consulting",
       ],
-      btnTitle: "CONSULTE",
+      btnTitle: "CONSULT",
       onclick: handleSidebarChat,
     },
   ];
