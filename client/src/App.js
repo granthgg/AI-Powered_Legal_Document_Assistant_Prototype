@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import NewLandingPage from './pages/NewLandingPage';
 import Landing from "./pages/LandingPage";
 import GenerateToken from "./components/GenerateToken";
 import CustomiseDocuments from "./components/CustomiseDocuments";
@@ -23,7 +22,8 @@ const App = () => {
         <Route
           path={"/"}
           element={
-            <NewLandingPage
+            <Landing
+              comp="/"
               open={open}
               handleSideBar={handleSideBar}
               handleSidebarChat={handleSidebarChat}
