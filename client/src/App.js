@@ -18,7 +18,8 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
+      <div className="flex-grow">
      <Routes>
         <Route
           path={"/"}
@@ -90,8 +91,9 @@ const App = () => {
           }
         />
       </Routes>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
