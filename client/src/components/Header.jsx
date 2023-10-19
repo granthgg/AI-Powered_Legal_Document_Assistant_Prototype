@@ -11,7 +11,7 @@ const Header = ({ show, handleSideBar }) => {
   return (
     <div className={`"md:w-full text-white " ${show ? "sidebar active" : "sidebar"}`}>
       <img src={logo} alt="" className="logo" />
-      <ul className="h-4/5 flex flex-col items-center justify-evenly  text-left">
+      <ul className="h-4/5 flex flex-col items-center justify-evenly  text-center">
         <li>
           <Link to="/" className="flex flex-row gap-3">
             <AiOutlineHome className="block " size={"2rem"} />
