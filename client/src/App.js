@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Landing from "./pages/LandingPage";
 import GenerateToken from "./components/GenerateToken";
+import Footer from './components/Footer';
 import CustomiseDocuments from "./components/CustomiseDocuments";
 
 const App = () => {
@@ -89,6 +90,7 @@ const App = () => {
           }
         />
       </Routes>
+      <Footer />
     </>
   );
 };
