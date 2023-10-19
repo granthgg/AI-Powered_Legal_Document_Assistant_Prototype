@@ -14,7 +14,7 @@ const Header = ({ show, handleSideBar }) => {
       <ul className="h-4/5 flex flex-col items-center justify-evenly  text-center">
         <li>
           <Link to="/" className="flex flex-row gap-3">
-            <AiOutlineHome className="block md:hidden" size={"2rem"} />
+            <AiOutlineHome className="block " size={"2rem"} />
             <span className="hidden md:block text-white"> Home</span>
           </Link>
         </li>
