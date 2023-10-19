@@ -46,7 +46,7 @@ const GenerateToken = ({ open, handleSideBar }) => {
       >
         <Navbar show={open} handleSideBar={handleSideBar} />
 
-        <div className="p-5 mb-12 ">
+        <div className="p-5 mb-12 pb-16">
           {messages.map((item, index) => {
             return item.role === "Me" ? (
               <MeQuestion question={item} key={index} />
