@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="flex-grow">
+      <div className="flex-grow mb-16">
      <Routes>
         <Route
           path={"/"}
