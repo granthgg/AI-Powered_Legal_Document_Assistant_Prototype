@@ -21,12 +21,13 @@ const openAI = new OpenAI({
 });
 
 app.post("/ask", async (req, res) => {
-  const { prompt } = req.body;
+  const userInput = req.body.prompt;
+  const prompt = `System: You are a legal document assistant. User: ${userInput}`;
   const completion = await openAI.completions.create({
     model: "text-davinci-002",
     prompt: prompt,
-    max_tokens: 1000,
-    temperature: 0.3,
+    max_tokens: 5000,
+    temperature: 0.4,
   });
   res.json({
     role: "Judge",
