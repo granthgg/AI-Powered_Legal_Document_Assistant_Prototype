@@ -61,7 +61,7 @@ const GenerateToken = ({ open, handleSideBar }) => {
               open ? "w-4/5 transition-all right-0" : " w-full left-0"
             } fixed bottom-0  right-0 bg-white p-4 shadow-lg `}
           >
-            <div className="flex">
+            <div className="flex pb-16">
               <input
                 type="text"
                 placeholder="Enter the specifications of your document"
