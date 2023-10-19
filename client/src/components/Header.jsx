@@ -11,7 +11,7 @@ const Header = ({ show, handleSideBar }) => {
   return (
     <div className={`"md:w-full text-white " ${show ? "sidebar active" : "sidebar"}`}>
       <img src={logo} alt="" className="logo" />
-      <ul className="h-4/5 flex flex-col items-center justify-evenly  text-center">
+      <ul className="h-4/5 flex flex-col items-center justify-evenly  text-left">
         <li>
           <Link to="/" className="flex flex-row gap-3">
             <AiOutlineHome className="block " size={"2rem"} />
@@ -20,25 +20,25 @@ const Header = ({ show, handleSideBar }) => {
         </li>
         <li>
           <Link to="/about">
-            <FiInfo className="block md:hidden" size={"2rem"} />
+            <FiInfo className="block " size={"2rem"} />
             <span className="hidden md:block"> About us</span>
           </Link>
         </li>
         <li>
           <Link to="/contact">
-            <FiPhoneCall className="block md:hidden " size={"2rem"} />
+            <FiPhoneCall className="block  " size={"2rem"} />
             <span className="hidden md:block"> Contact Us</span>
           </Link>
         </li>
         <li>
           <Link to="/privacy">
-            <MdOutlinePrivacyTip className="block md:hidden" size={"2rem"} />
+            <MdOutlinePrivacyTip className="block " size={"2rem"} />
             <span className="hidden md:block"> Privacy Policy</span>
           </Link>
         </li>
         <li>
           <Link to="/terms">
-            <FaHandshake className="block md:hidden" size={"2rem"} />
+            <FaHandshake className="block " size={"2rem"} />
             <span className="hidden md:block"> Terms and Condition</span>
           </Link>
         </li>
