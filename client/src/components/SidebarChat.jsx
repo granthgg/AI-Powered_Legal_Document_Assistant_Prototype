@@ -21,7 +21,7 @@ const SidebarChat = ({ chatbox, handleSidebarChat }) => {
       }`}
     >
       <div className="w-1/5 md:w-3/5 transition-all" onClick={handleSidebarChat}></div>
-      <div className="bg-black w-4/5 md:w-2/5 rounded overflow-auto transition-all ">
+      <div className="bg-black w-4/5 md:w-2/5 rounded overflow-auto transition-all pb-16">
         <div>
           <p className="text-center mt-3">DOCUMENT SUGGESTION</p>
           <ul className="text-left bg-zinc-400 border-zinc-50 border-2  p-1 m-3 rounded-lg leading-3 text-xs ">
