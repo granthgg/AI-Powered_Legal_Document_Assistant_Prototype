@@ -16,12 +16,12 @@ const SidebarChat = ({ chatbox, handleSidebarChat }) => {
 
   return (
     <div
-      className={`sidebarchat h-parent w-parent fixed  flex flex-row justify-between transition-all ${
+      className={`sidebarchat h-parent w-parent fixed flex flex-row justify-between transition-all ${
         chatbox ? "top-0 left-0 right-0 bottom-0" : "notActive"
       }`}
     >
       <div className="w-1/5 md:w-3/5 transition-all" onClick={handleSidebarChat}></div>
-      <div className="bg-black w-4/5 md:w-2/5 rounded overflow-auto transition-all ">
+      <div className="bg-black w-4/5 md:w-2/5 rounded overflow-auto transition-all pb-16"> {/* Added padding-bottom */}
         <div>
           <p className="text-center mt-3">DOCUMENT SUGGESTION</p>
           <ul className="text-left bg-zinc-400 border-zinc-50 border-2  p-1 m-3 rounded-lg leading-3 text-xs ">
@@ -46,10 +46,9 @@ const SidebarChat = ({ chatbox, handleSidebarChat }) => {
           </div>
         </div>
         <form
-          className="shadow-md absolute bottom-0 flex flex-row w-2/5 pb-3 px-2 justify-between items-center gap-3"
+          className="shadow-md flex flex-row w-2/5 pb-3 px-2 justify-between items-center gap-3 fixed bottom-0" {/* Removed 'absolute', added 'fixed' */}
           onSubmit={handleSubmit}
         >
-          {/* Your form elements go here */}
           <input
             type="text"
             placeholder="Type your query here......."
