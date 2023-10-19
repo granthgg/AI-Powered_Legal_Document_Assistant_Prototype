@@ -46,7 +46,7 @@ const SidebarChat = ({ chatbox, handleSidebarChat }) => {
           </div>
         </div>
         <form
-          className="shadow-md absolute bottom-0 flex flex-row w-2/5 pb-8 px-2 justify-between items-center gap-3"
+          className="shadow-md absolute bottom-5 flex flex-row w-2/5 pb-3 px-2 justify-between items-center gap-3"
           onSubmit={handleSubmit}
         >
           {/* Your form elements go here */}
