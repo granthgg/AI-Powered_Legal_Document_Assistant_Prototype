@@ -23,7 +23,7 @@ const Navbar = ({ handleSideBar, show }) => {
       </div>
       <div className="flex items-center">
         <BiUserCircle />
-        <span className="ml-2 hidden md:inline">e</span> {/* Added text */}
+        <span className="ml-2 hidden md:inline"></span> {/* Added text */}
       </div>
     </header>
   );
