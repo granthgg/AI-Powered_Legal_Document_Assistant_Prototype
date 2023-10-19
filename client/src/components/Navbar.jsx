@@ -7,13 +7,12 @@ import logo from "../assets/logo.png";
 const Navbar = ({ handleSideBar, show }) => {
   return (
     <header className="flex text-white justify-between items-center ">
-      <div className="flex items-center">
+      <div>
         <GiHamburgerMenu
           onClick={handleSideBar}
           className={show && "hidden invisible"}
           size={"1.5rem"}
         />
-        <span className="ml-2 hidden md:inline">Menu</span> {/* Added text */}
       </div>
       <div className="flex flex-row justify-between items-center gap-3">
         <img src={logo} className="logo hidden md:block " alt="" />
@@ -21,12 +20,9 @@ const Navbar = ({ handleSideBar, show }) => {
           LEGAL DASTAVEZ
         </p>
       </div>
-      <div className="flex items-center">
+      <div>
         <BiUserCircle />
-        <span className="ml-2 hidden md:inline">Profile</span> {/* Added text */}
       </div>
     </header>
   );
 };
-
-export default Navbar;
