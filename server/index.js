@@ -22,7 +22,7 @@ const openAI = new OpenAI({
 
 app.post("/ask", async (req, res) => {
   const userInput = req.body.prompt;
-  const prompt = `System: You are a legal document assistant. User: ${userInput}`;
+  const prompt = `System: You are a legal document assistant, You create legal document which consists of all legal clauses as per Indian Law. User: ${userInput}`;
   const completion = await openAI.completions.create({
     model: "text-davinci-002",
     prompt: prompt,
