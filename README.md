@@ -4,7 +4,7 @@ Only Generate Document Functionality works for now; the user can write their pro
 
 
 To Launch the WebApp hosted on Vercel and Server on Render, Click on the link
-https://ai-powered-legal-assistant-ui-main.vercel.app/
+[Prototype App Link](https://ai-powered-legal-assistant-ui-main.vercel.app/)
 
 ## Overview
 The AI-Powered Legal Document Assistant Prototype is designed to revolutionize the way legal documents are handled by leveraging advanced AI technologies. This project aims to simplify the process of generating, customizing, and analyzing legal documents through an intuitive web interface.
